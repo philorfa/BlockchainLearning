@@ -1,0 +1,91 @@
+First Node:
+
+Account Address: a89defde399bfa7e09a010f9c309f6dfb04ff2ab
+Password: FirstNode123
+enode: enode://3805e3a30de242dc1b414e46e2713aef9b664847f7ffb4bbdd284068dc49d45029fbbd0e807e9d76aced79fe558307ecb51976a35ee84bf50fb59876ef9c61d0@[::]:30301?discport=0
+
+coin address: 0xa89defde399bfa7e09a010f9c309f6dfb04ff2ab
+
+Extra 4 accounts Password to access coinbase account: FirstNode123 (in other case use different password)
+
+Connected Peers:
+
+[
+  {
+    "id": "28633f6f7d3ee17c3d9da3ffa677c00566f81e81e0a70103dcc58beb47f295a0b68feaa12e5b5e2774a88b47d1f472505b070c5b3c596aafc143f90083594a99",
+    "name": "Geth/v1.7.3-stable-4bb3c89d/linux-amd64/go1.9",
+    "caps": [
+      "eth/63"
+    ],
+    "network": {
+      "localAddress": "[::1]:39598",
+      "remoteAddress": "[::1]:30302"
+    },
+    "protocols": {
+      "eth": {
+        "version": 63,
+        "difficulty": 131072,
+        "head": "0x5e1fc79cb4ffa4739177b5408045cd5d51c6cf766133f23f7cd72ee1f8d790e0"
+      }
+    }
+  }
+]
+
+
+
+Second Node: 
+
+Account Address: 462940198c8886f4c4fa93c61c4cba60d41d74ae
+
+Password: SecondNode123
+
+enode: enode://28633f6f7d3ee17c3d9da3ffa677c00566f81e81e0a70103dcc58beb47f295a0b68feaa12e5b5e2774a88b47d1f472505b070c5b3c596aafc143f90083594a99@[::]:30302?discport=0
+
+coin address: 0x462940198c8886f4c4fa93c61c4cba60d41d74ae 
+
+Extra 4 accounts Password to access coinbase account: SecondNode123 (in other case use different password) 
+
+Connected Peers:
+
+[
+  {
+    "id": "3805e3a30de242dc1b414e46e2713aef9b664847f7ffb4bbdd284068dc49d45029fbbd0e807e9d76aced79fe558307ecb51976a35ee84bf50fb59876ef9c61d0",
+    "name": "Geth/v1.7.3-stable-4bb3c89d/linux-amd64/go1.9",
+    "caps": [
+      "eth/63"
+    ],
+    "network": {
+      "localAddress": "[::1]:30302",
+      "remoteAddress": "[::1]:39598"
+    },
+    "protocols": {
+      "eth": {
+        "version": 63,
+        "difficulty": 131072,
+        "head": "0x5e1fc79cb4ffa4739177b5408045cd5d51c6cf766133f23f7cd72ee1f8d790e0"
+      }
+    }
+  }
+]
+
+
+
+Contents for the Custom Genesis file:
+
+{
+    "config": {
+        "chainId": 13,
+        "homesteadBlock": 0,
+        "eip155Block": 0,
+        "eip158Block": 0
+    },
+    "difficulty": "0x20000",
+    "gasLimit": "0x2fefd8",
+    "alloc": {},
+    "nonce": "0x0000000000000042",
+    "timestamp": "0x0",
+    "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "extraData": "",
+    "mixhash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "coinbase": "0x0000000000000000000000000000000000000000"
+}
